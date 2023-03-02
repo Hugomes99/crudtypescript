@@ -1,0 +1,30 @@
+POST http://localhost:3000/users
+content-type: application/json
+
+{
+    "cpf": 1234,
+    "nome": "Hugo Gomes",
+    "carteira_de_trabalho": 2341,
+    "setor": "vendas",
+    "telefone1": 1239,
+    "telefone2": 1232
+}
+
+### FindAll
+GET http://localhost:3000/users
+
+### FindOne
+GET http://localhost:3000/users/4
+
+### Update
+PUT http://localhost:3000/users/4
+Content-Type: application/json
+
+{
+    "email": "igo@mail.com",
+    "nome": "Igo Gomes",
+    "idade": 26
+}
+
+### Update
+DELETE http://localhost:3000/users/1

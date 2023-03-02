@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+</head>
+
+<body>
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a class="flex items-center">
+                <img src="https://icons-for-free.com/download-icon-programming+tags+icon-1320087273222563498_512.png"
+                    class="mr-3 h-6 sm:h-9">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Teste Dev</span>
+            </a>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                            aria-current="page">Funcionários</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Cadastrar</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Editar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="min-h-screen bg-gray-100 flex flex-col justify-center py-12 px-6 lg:px-8">
+        <h2 class="mt-6 text-center text-3xl font-extrabold">Funcionários</h2>
+        <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="py-3 px-6">Nome do Funcionário</th>
+                        <th scope="col" class="py-3 px-6">CPF</th>
+                        <th scope="col" class="py-3 px-6">Setor</th>
+                        <th scope="col" class="py-3 px-6">Editar</th>
+                        <th scope="col" class="py-3 px-6">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                        <th scope="row" class="py-3 px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Apple MacBook Pro 17"</th>
+                        <td class="py-4 px-6">Sliver</td>
+                        <td class="py-4 px-6">Laptop</td>
+                        <td class="py-4 px-6">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Editar</a>
+                        </td>
+                        <td class="py-4 px-6">
+                            <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">Remover</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="py-4 px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Microsoft Surface Pro</th>
+                        <td class="py-4 px-6">White</td>
+                        <td class="py-4 px-6">Laptop PC</td>
+                        <td class="py-4 px-6">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Editar</a>
+                        </td>
+                        <td class="py-4 px-6">
+                            <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">Remover</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                        <th scope="row" class="py-4 px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Magic Mouse 2</th>
+                        <td class="py-4 px-6">Black</td>
+                        <td class="py-4 px-6">Accessories</td>
+                        <td class="py-4 px-6">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Editar</a>
+                        </td>
+                        <td class="py-4 px-6">
+                            <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">Remover</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="py-4 px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Google Pixel Phone</th>
+                        <td class="py-4 px-6">Gray</td>
+                        <td class="py-4 px-6">Phone</td>
+                        <td class="py-4 px-6">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Editar</a>
+                        </td>
+                        <td class="py-4 px-6">
+                            <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">Remover</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="py-4 px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Apple Watch 5</th>
+                        <td class="py-4 px-6">Red</td>
+                        <td class="py-4 px-6">Wearables</td>
+                        <td class="py-4 px-6">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Editar</a>
+                        </td>
+                        <td class="py-4 px-6">
+                            <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">Remover</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>
